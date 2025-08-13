@@ -10,7 +10,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
     // Verifique no banco de dados ou onde quer que estejam as informações do usuário
-    if($username === 'usuario' && $password === 'senha') {
+    if($username === 'halley' && $password === 'senha') {
         $_SESSION['user_id'] = 1;
         header("Location: dashboard.php");
         exit;
